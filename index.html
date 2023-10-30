@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <title>EgyptTour</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header open">
         <div class="container">
             <div class="header__wraper">
                 <div class="login"><a href="#">EgyptTour</a>
@@ -32,8 +33,11 @@
                         <li class="item"><a href="#">About</a></li>
                         <li class="item"><a href="#">Inspiration</a></li>
                         <li class="item"><a href="#">Contact</a></li>
-                        <li class="item"><button>Sign Up</button></li>
                     </ul>
+                    <button class="header--button" >Sign Up</button>
+                    <button class="header__burger" id="burger">
+                        <span></span><span></span><span></span>
+                    </button>
             </div>
         </div>
     </header>
@@ -41,8 +45,10 @@
         <section class="find">
             <div class="container__large">
                 <div class="holder__wraper">
-                    <div class="holder__image"></div>
-                    <p>Find the Best<br> Egyptian Guide</p>
+                    <div class="holder__image">
+                         <p>Find the Best<br> Egyptian Guide</p>
+                        <img src="images/pexels-taryn-elliott-3889907 2.png" alt="">
+                    </div>            
                 </div>
             </div>
             <div class="container">
@@ -280,8 +286,11 @@
         <section class="tourist">
             <div class="container__large">
                 <div class="holder__wraper custom__holder__wraper">
-                    <div class="holder__image custom__holder__image"></div>
                     <p>Are you a Tourist<br> Guide in Egypt?</p>
+                    <div class="holder__image custom__holder__image">
+                        <img src="images/katerina-kerdi-_OyMf5BbAxA-unsplash 1.png" alt="">
+                    </div>
+                    
                 </div>
             </div>
             <div class="container">
@@ -451,8 +460,5 @@
             </div>
         </div>
     </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="java/script.js"></script>
 </body>
 </html>
