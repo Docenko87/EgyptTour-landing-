@@ -147,6 +147,12 @@ html{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: .3s;
+}
+.header--button:hover{
+  color: #FF5029;
+  background-color: #D9D9D9;
+  transition: .3s;
 }
 .item+.item{
     margin-left: 40px;
@@ -237,6 +243,9 @@ header.open .header__burger span{
   .login__nav{
     display: none;
   }
+  .login{
+    margin-right: 10px;
+  }
 }
 
   
@@ -294,6 +303,7 @@ header.open .header__burger span{
   opacity: 0.8;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
 
 .list__top{
@@ -338,6 +348,12 @@ header.open .header__burger span{
   background: #FF5029;
   padding: 27px 31px;
   margin-left: 45px;
+  transition: .3s;
+}
+.list__wraper button:hover{
+  color:#FF5029;
+  background-color: #D9D9D9;
+  transition: .3s;
 }
 .block__head{
   display: flex;
@@ -362,6 +378,12 @@ header.open .header__burger span{
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  transition: .3s;
+}
+.block__head button:hover{
+  color: #FF5029;
+  background-color:#D9D9D9;
+  transition: .3s;
 }
 .cards__wraper{
   display: flex;
@@ -375,11 +397,13 @@ header.open .header__burger span{
   width: 288px;
   border-radius: 20px;
   background: #FFF;
+  cursor: pointer;
   box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.15), 0px -8px 20px 0px rgba(235, 235, 235, 0.15);
 }
 .card__head:hover{
   background-color: #FF5029;
   color: #FFF;
+  transition: .3s;
 }
 .card__item--image{
   margin: 40px auto 0;
@@ -420,9 +444,11 @@ header.open .header__burger span{
 }
 .card__views:hover{
   color: rgba(255, 255, 255, 0.60);
+  transition: .3s;
 }
 .unit svg:hover{
   fill:white;
+  transition: .3s;
 }
 .unit svg{
   fill: #FF5029;
@@ -442,6 +468,9 @@ header.open .header__burger span{
   z-index: -2;
   transition: .3s;
 }
+.card__grup img{
+  cursor: pointer;
+}
 .card__mask{
   position: absolute;
   top: 23px;
@@ -457,6 +486,11 @@ header.open .header__burger span{
   font-weight: 700;
   line-height: 50px;
   margin-top: 45px;
+  transition: .3s;
+}
+.card__subtitle:hover{
+  color: #FF5029;
+  transition: .3s;
 }
 .custom__holder__image{
   z-index: 1;
@@ -652,6 +686,12 @@ header.open .header__burger span{
   padding: 20px 40px;
   border-radius: 12px;
   margin-left: 0;
+  transition: .3s;
+}
+.list__button button:hover{
+  color: #FF5029;
+  background-color: #D9D9D9;
+  transition: .3s;
 }
 .list__icon{
   display: flex;
@@ -692,6 +732,7 @@ header.open .header__burger span{
 .block__left img{
   border-radius: 16px;
   background-position: center;
+  cursor: pointer;
 }
 .block__left button{
   color:  #FF5029;
@@ -705,6 +746,12 @@ header.open .header__burger span{
   align-items: center;
   margin-top: 30px;
   margin-bottom: 24px;
+  transition: .3s;
+}
+.block__left button:hover{
+  color: #FFF;
+  background-color: #FF5029;
+  transition: .3s;
 }
 .block__subtitle{
   font-size: 40px;
@@ -723,7 +770,9 @@ header.open .header__burger span{
   border-radius: 20px;
   background: #FFF;
   box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.15), 0px -8px 20px 0px rgba(235, 235, 235, 0.15);
-
+}
+.block__right__item img{
+  cursor: pointer;
 }
 .block__right{
   display: flex;
@@ -746,6 +795,12 @@ header.open .header__burger span{
   padding: 8px 30px 8px 20px;
   align-items: center;
   margin-bottom: 24px;
+  transition: .3s;
+}
+.item__right button:hover{
+  color: #fff;
+  background-color: #FF5029;
+  transition: .3s;
 }
 .item__left img{
   border-radius: 16px;
@@ -844,6 +899,14 @@ header.open .header__burger span{
   line-height: 28px;
   margin-bottom: 30px;
 }
+.list__item:hover{
+  color: #FFF;
+  transition: .3s;
+}
+.contact a:hover{
+  color: #FF5029;
+  transition: .3s;
+}
 .list__item{
   color: rgba(255, 255, 255, 0.80);
   font-size: 16px;
@@ -875,6 +938,9 @@ header.open .header__burger span{
   height: 40px;
   border-radius: 50%;
   border: 1px solid#FF5029;
+}
+.icon__item{
+  cursor: pointer;
 }
 .icon__item__contact+.icon__item__contact{
   margin-left: 8px;
