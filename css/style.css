@@ -284,6 +284,16 @@ header.open .header__burger span{
   font-weight: 700;
   line-height: 30px;
   opacity: 0.8;
+  border: none;
+}
+.js-choice{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  opacity: 0.8;
+  border: none;
+  width: 100%;
 }
 
 .list__top{
@@ -457,6 +467,9 @@ header.open .header__burger span{
 .custom__holder__wraper p{
   position: relative;
   top: 40px;
+}
+.list__nav__main{
+  width: 215px;
 }
 @media screen and (max-width: 1260px){
   .custom__card__head{
@@ -944,4 +957,5 @@ header.open .header__burger span{
   .contact a {
     font-size: 14px;
 }
+
 }

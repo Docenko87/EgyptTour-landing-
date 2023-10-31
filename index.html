@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <title>EgyptTour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <header class="header open">
+    <header class="header">
         <div class="container">
             <div class="header__wraper">
                 <div class="login"><a href="#">EgyptTour</a>
@@ -57,56 +57,50 @@
                         <div class="list__nav__top">
                             Gender
                         </div>
-                        <ul class="list__top">
-                            <li class="list__nav">Male</li>
-                            <li class="list__nav">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                            </li>
-                        </ul>
+                        <ul class="list__top"><select class="js-choice">
+                            <li><option class="list__nav">Male</option></li>
+                            <li><option class="list__nav">Female</option></li>
+                        </ul></select>
                     </div>
                     <div class="list__line"></div>
                     <div class="list__nav__main">
                         <div class="list__nav__top">
                             Age
                         </div>
-                        <ul class="list__top">
-                            <li class="list__nav">24+</li>
-                            <li class="list__nav">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                            </li>
-                        </ul>
+                        <ul class="list__top"><select class="js-choice">
+                            <li><option class="list__nav">24+</option></li>
+                            <li><option class="list__nav">25</option></li>
+                            <li><option class="list__nav">26</option></li>
+                            <li><option class="list__nav">27</option></li>
+                            <li><option class="list__nav">28</option></li>
+                            <li><option class="list__nav">29</option></li>
+                            <li><option class="list__nav">30</option></li>
+                            <li><option class="list__nav">31</option></li>
+                        </ul></select>
                     </div>
                     <div class="list__line"></div>
                     <div class="list__nav__main">
                         <div class="list__nav__top">
                             Language
                         </div>
-                        <ul class="list__top">
-                            <li class="list__nav">English, Arabic</li>
-                            <li class="list__nav--small">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                            </li>
-                        </ul>
+                        <ul class="list__top"><select class="js-choice">
+                            <li><option class="list__nav">English</option></li>
+                            <li><option class="list__nav">Arabic</option></li>
+                            <li><option class="list__nav">Spanish</option></li>
+                            <li><option class="list__nav">Turkey</option></li>
+                        </ul></select>
                     </div>
                     <div class="list__line"></div>
                     <div class="list__nav__main">
                         <div class="list__nav__top">
                             Lacalisation
                         </div>
-                        <ul class="list__top">
-                            <li class="list__nav">Cairo</li>
-                            <li class="list__nav">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                            </li>
-                        </ul>
+                        <ul class="list__top"><select class="js-choice">
+                            <li><option class="list__nav">Cairo</option></li>
+                            <li><option class="list__nav">Siria</option></li>
+                            <li><option class="list__nav">Pakistan</option></li>
+                            <li><option class="list__nav">Libia</option></li>
+                        </ul></select>
                     </div>
                     <button>Search</button>
                 </div>
@@ -252,7 +246,7 @@
                 <div class="cards__wraper custom__cards__wraper">
                     <div class="card__head custom__card__head">
                         <div class="card__grup"><a href="#">
-                            <img src="images/women.png" alt="">
+                            <img src="images/_Group_ (1).png" alt="">
                                 <div class="card__mask">
                                     <img src="images/Mask group.png" alt="">
                                 </div>
@@ -260,16 +254,6 @@
                             </a>
                         </div>
                     </div> 
-                    <!-- <div class="card__head custom__card__head">
-                        <div class="card__grup"><a href="#">
-                            <img src="images/_Group_.png" alt="">
-                                <div class="card__mask">
-                                    <img src="images/Mask group.png" alt="">
-                                </div>
-                                <div class="card__subtitle">Select a Guide</div>
-                            </a>
-                        </div>
-                    </div>  -->
                     <div class="card__head custom__card__head">
                         <div class="card__grup"><a href="#">
                             <img src="images/tenegeer.png" alt="">
@@ -470,5 +454,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
