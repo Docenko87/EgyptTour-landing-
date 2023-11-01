@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
     })
 
+        // const tl = gsap.timeLine({ defaults: { duration: 1 } });
+        gsap.from('.holder__wraper p', { opacity: .5, delay: 1, y: -40 })
     })
 
 // вызов alert
